@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #28a745;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.club-name {
+    font-size: 24px;
+    margin: 0;
+}
+
+.time {
+    font-size: 24px;
+    font-weight: bold; /* Жирный текст */
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.textured-button, .textured-button1, .textured-button2, .textured-button3 {
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 16px;
+}
+
+.textured-button {
+    background: url('../img/icons8-vk-48.png') no-repeat center;
+}
+
+.textured-button1 {
+    background: url('../img/icons8-телеграмма-app-48.png') no-repeat center;
+}
+
+.textured-button2 {
+    background: url('../img/icons8-whatsapp-48.png') no-repeat center;
+}
+
+.textured-button3 {
+    background: url('../img/icons8-viber-48.png') no-repeat center;
+}
+
+.textured-button:hover, .textured-button1:hover, .textured-button2:hover, .textured-button3:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    transform: translateY(-2px);
+}
+
+main {
+    padding: 20px;
+}
+
+.image-container {
+    position: relative;
+    margin: 20px 0;
+    overflow: hidden;
+   
+}
+
+.center-image {
+    width: 100%; 
+    height: auto; 
+    max-height: 1000px; 
+    object-fit: cover; 
+    transition: filter 0.3s ease;
+}
+
+.info-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 40px; 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 400px; 
+    text-align: center;
+    z-index: 10;
+    border-radius: 10px; 
+    font-size: 20px; 
+    line-height: 1.5; 
+}
+
+.image-container:hover .center-image {
+    filter: blur(4px);
+}
+
+.image-container:hover .info-overlay {
+    opacity: 1;
+}
+
+.divider {
+    width: 100%; /* Задает ширину на всю ширину контейнера */
+    height: 4px; /* Высота разделителя */
+    background-color: #ccc; /* Цвет разделителя */
+    margin: 20px 0; /* Отступы сверху и снизу для создания пространства */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}

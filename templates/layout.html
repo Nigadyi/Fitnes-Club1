@@ -1,0 +1,50 @@
+<!-- layout.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выпадающее меню</title>
+    <link rel="stylesheet" href="../static/styles.css"> 
+    <style>
+        /* Пример стилей для логотипа и меню */
+        .button-container {
+            display: flex;
+            align-items: center;
+            margin: 20px; /* Отступ */
+        }
+        .logo {
+            width: 150px; /* Ширина логотипа */
+            height: auto; /* Автоматическая высота для сохранения пропорций */
+            margin-right: 20px; /* Отступ справа для логотипа */
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <img src="../img/Logo.png" alt="Логотип" class="logo"> <!-- Логотип -->
+        <div class="menu-container">
+            <div class="dropdown">
+                <button class="dropbtn">Меню</button>
+                <div class="dropdown-content">
+                    <a href="page1.html">Страница 1</a>
+                    <a href="page2.html">Страница 2</a>
+                    <a href="page3.html">Страница 3</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-container">
+            <div class="dropdown">
+                <button class="dropbtn">Услуги</button>
+                <div class="dropdown-content">
+                    <a href="page1.html">Товары</a>
+                    <a href="page2.html">Абонементы</a>
+                    <a href="page3.html">Тренера</a>
+                    <a href="page4.html">Тренировки</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
